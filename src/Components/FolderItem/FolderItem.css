@@ -1,0 +1,33 @@
+.folder-list {
+    margin-bottom: 30px;
+}
+.folder-item {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    padding: 12px;
+    align-items: center;
+
+}
+.folder-item-name {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+.folder-item.active {
+   background-color: #fff;
+   
+}
+.folder-item-icon {
+    width: 10px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.folder-item-close {
+    position: absolute;
+    right: 10px;
+}

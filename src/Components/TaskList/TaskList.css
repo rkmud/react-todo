@@ -1,0 +1,134 @@
+.task {
+    position: relative;
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    z-index: 1;
+    overflow: auto;
+}
+.task.passive {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-wrapper {
+    margin-bottom: 40px;
+}
+.task-title-wrapper {
+    display: flex;
+    align-items: center;
+}
+.task-title {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+}
+.change-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.line {
+    margin: 20px 0 30px 0;
+    height: 2px;
+    width: 100%;
+    background-color: #F4F6F8;
+}
+.task-list {
+    list-style: none;
+}
+.task-item {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.task-item.active .task-list-circle.active{
+    background-image: url(../img/iconDonePassive.png);
+    border: 2px solid #F2F2F2;
+}
+.task-list-circle {
+    display: block;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 2px solid #E8E8E8;
+}
+.task-list-circle.active {
+    background-image: url(../img/iconDone.svg);
+    background-size: cover;
+    border: 2px solid #4DD599;
+}
+.task-item-delete {
+    position: absolute;
+    color: #E3E3E3;
+    right: 0;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.block-item {
+    color: #B4B4B4;
+    display: flex;
+    align-items: center;
+}
+.add-item-icon {
+    cursor: pointer;
+    margin-right: 20px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/plus.png);
+    background-size: cover;
+    margin-left: 4px;
+}
+.form-add {
+    display: flex;
+    flex-direction: column;
+}
+.form-add-input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+.form-add-input::placeholder {
+    color: #C7C7C7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-btn {
+    cursor: pointer;
+    border: none; 
+    outline: none; 
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+}
+.form-btn-add {
+    background: #4DD599;
+    color: #fff;
+    border: 1.5px solid #4DD599;
+    margin-right: 9px;
+}
+.form-btn-cancel{
+    background: #F4F6F8;
+    color: #9C9C9C;
+    border: 1.5px solid #F4F6F8;
+}
+.task-text-default {
+    color: #C9D1D3;
+    font-size: 32px;
+
+}

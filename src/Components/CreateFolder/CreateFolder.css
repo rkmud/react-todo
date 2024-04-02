@@ -1,0 +1,81 @@
+.create-item {
+    position: relative;
+    color: #767676;
+    display: flex;
+    flex-direction: column;
+}
+.create-link {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+}
+.create-add {
+    position: absolute;
+    top: 40px;
+    width: 235px;
+    height: 112px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px -2px 4px 2px rgba(244, 246, 248, 0.7);
+    z-index: 2;
+    padding: 18px;
+}
+.create-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.create-add-input {
+    padding: 8px 11px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.create-add-input::placeholder {
+    letter-spacing: 0.15px;
+    color: #C7C7C7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.create-add-colors {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.create-add-color {
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.create-add-color.active {
+    border: 2px solid #525252 !important;
+}
+.button-add {
+    cursor: pointer;
+    background-color: #4DD599;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+.button-close {
+    top: -5px;
+    right: -5px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #F4F6F8;
+    background: #5C5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

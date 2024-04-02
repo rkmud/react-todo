@@ -1,0 +1,19 @@
+.folder-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    background: #F4F6F8;
+    padding: 22px 20px;
+}
+.folder-component {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 12px;
+    align-items: center;
+    margin: 26px 0 10px 0;
+}
+.folder-component-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
